@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="register.js" defer></script>
+    <title>Регистрация | Интернет-магазин цветов</title>
+</head>
+<body>
+    <section class="register-container">
+        <h2>Создайте учетную запись</h2>
+        <form id="register-form">
+            <label for="name">Имя</label>
+            <input type="text" id="name" required placeholder="Ваше имя">
+
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" required placeholder="Ваш email">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" required placeholder="Ваш пароль">
+
+            <label for="confirm-password">Подтверждение пароля</label>
+            <input type="password" id="confirm-password" required placeholder="Подтвердите пароль">
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        
+        <p>Уже есть аккаунт? <a href="../auth/auth.html">Войти</a></p>
+    </section>
+</body>
+</html>

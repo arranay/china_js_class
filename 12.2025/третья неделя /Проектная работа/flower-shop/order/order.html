@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="../products.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Список товаров -->
+        <section id="cart-summary">
+            <h2>Список товаров</h2>
+            <div id="cart-items"></div>
+            <div id="total-price">Итоговая сумма: <span>0 ₽</span></div>
+        </section>
+
+        <!-- Форма оформления заказа -->
+        <section id="checkout-form">
+            <h2>Оформление заказа</h2>
+            <form id="order-form">
+                <label for="full-name">Полное имя:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Введите ваше имя" required>
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="E-mail" required>
+
+                <label for="address">Адрес доставки:</label>
+                <input type="text" id="address" name="address" placeholder="Введите адрес" required>
+
+                <button type="submit">Оформить заказ</button>
+            </form>
+        </section>
+
+        <!-- Подтверждение заказа -->
+        <section id="order-confirmation" style="display: none;">
+            <h2>Подтверждение заказа</h2>
+            <div id="order-details"></div>
+            <button id="print-order">Распечатать заказ</button>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

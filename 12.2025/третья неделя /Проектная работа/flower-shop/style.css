@@ -1,0 +1,127 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Навигация */
+nav {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Заголовок */
+header {
+    color: black;
+    text-align: center;
+}
+
+/* Стили для контейнеров с товарами */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.product-price {
+    color: #007BFF;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.search-box {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* add cart buttons style */
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-to-cart,
+.quantity-controls .decrement,
+.quantity-controls .increment {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.quantity-controls .decrement:hover,
+.quantity-controls .increment:hover {
+    background-color: black;
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px 0;
+}

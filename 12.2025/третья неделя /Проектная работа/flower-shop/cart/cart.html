@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="../products.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="cart.js" defer></script>
+    <title>Корзина | Интернет-магазин цветов</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Главна страница</a> |
+            <a href="profile/profile.html">Личный кабинет</a> |
+            <a href="auth/auth.html" id="login">Войти</a>
+            <a href="#" id="logout">Выйти</a>
+        </nav>
+    </header>
+
+    <h1>Корзина</h1>
+    <div class="cart-container">
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+            <span>Общая стоимость: </span>
+            <span class="total-price">0 ₽</span>
+        </div>
+    </div>
+
+    <!-- Кнопка "Оформить заказ" -->
+    <div class="checkout-container">
+        <a href="../order/order.html" class="checkout-button">Оформить заказ</a>
+    </div>
+
+</body>
+</html>

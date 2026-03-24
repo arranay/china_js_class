@@ -1,0 +1,100 @@
+        /* Общие стили для страницы */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../images/1.jpg');
+            color: #333;
+        }
+
+        /* Контейнер профиля */
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-container h1 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .profile-info div {
+            margin: 12px 0;
+        }
+
+        .profile-info span {
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Стиль для полей ввода */
+        .input-field {
+            padding: 12px;
+            width: 700px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: border 0.3s;
+        }
+
+        .input-field:focus {
+            border-color: black;
+            outline: none;
+        }
+
+        /* Стиль для кнопок */
+        .btn {
+            width: 725px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-logout {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-logout:hover {
+            background-color: #e53935;
+        }
+
+        .btn-save {
+            background-color: black;
+            color: white;
+        }
+
+        .btn-save:hover {
+            background-color: black;
+        }
+
+        .btn-back {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+
+        /* Стили для раздела смены пароля */
+        .password-change {
+            margin-top: 30px;
+            text-align: left;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+        }
+
+        .password-change h3 {
+            color: black;
+        }
